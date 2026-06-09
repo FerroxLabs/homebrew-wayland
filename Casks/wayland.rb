@@ -2,8 +2,8 @@ cask "wayland" do
   arch arm: "arm64", intel: "x64"
 
   version "0.9.6-rc.2.1"
-  sha256 arm:   "affaab9363042804a142d4c4567fa9823c5a27d34233071875c4715bfc858d82",
-         intel: "9f3667daf3a6dbcddc0ae457c8141f75894812d8b25e4d7ab1db6266132a99d8"
+  sha256 arm:   "b9b1b7f12e56d29a14c9770d667e3c6c070f484796745914beb549b1c756c874",
+         intel: "b594cd29d3a2a441ad264224737e0d07486674be1253a4c31a5fce6b1343c9b8"
 
   url "https://github.com/FerroxLabs/wayland/releases/download/v#{version}/Wayland-#{version}-mac-#{arch}.dmg"
   name "Wayland"
