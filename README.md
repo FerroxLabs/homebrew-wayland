@@ -1,32 +1,30 @@
-# Homebrew Tap for Wayland
+# Homebrew Tap for Wayland (moved)
 
-The official Homebrew tap for [Wayland](https://github.com/FerroxLabs/wayland) — the
-local-first desktop AI agent that drives every AI CLI on your machine (Claude Code,
-Codex, Gemini, and more), on your keys.
+Wayland's Homebrew cask now lives in the consolidated Ferrox Labs tap:
 
-## Install
+```sh
+brew install --cask ferroxlabs/tap/wayland
+```
 
-```bash
-brew tap ferroxlabs/wayland
+or:
+
+```sh
+brew tap ferroxlabs/tap
 brew install --cask wayland
 ```
 
-The app is signed with a Developer ID and notarized by Apple, so it opens with a
-normal double-click — no Gatekeeper prompts.
+## This tap still works
 
-## Update
+`ferroxlabs/wayland` continues to work for existing installs, but it is no longer
+the canonical home and will not receive new apps. Please switch to
+[`ferroxlabs/tap`](https://github.com/FerroxLabs/homebrew-tap), which hosts every
+Ferrox Labs app in one place.
 
-```bash
-brew upgrade --cask wayland
-```
-
-## Uninstall
-
-```bash
-brew uninstall --cask wayland
+```sh
+# move to the consolidated tap
 brew untap ferroxlabs/wayland
+brew install --cask ferroxlabs/tap/wayland
 ```
 
-> This tap currently ships the latest release candidate. Once Wayland reaches a
-> stable release, the cask will also be submitted to the official
-> `homebrew/homebrew-cask` so `brew install --cask wayland` works without tapping.
+The app is signed with a Developer ID and notarized by Apple, so it opens with a
+normal double-click.
