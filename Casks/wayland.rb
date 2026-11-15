@@ -1,9 +1,9 @@
 cask "wayland" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.9.7"
-  sha256 arm:   "59680030dc67f2c82b0e3532fb634204be6b176e0a6f4964afef60f3032b7439",
-         intel: "4d988c82b6e6ffc7624cfed208a45008a219b47e5f0a7e8471b67ff587c166ef"
+  version "0.13.2"
+  sha256 arm:   "d26106a6af6bd6c945676ef4c3f3a08d102dab468e3caf634c13fe1d8329d188",
+         intel: "cd4991f41b67c27d7eb48d10032626cc0bf4deb2779d43065d584fae2d8553fb"
 
   url "https://github.com/FerroxLabs/wayland/releases/download/v#{version}/Wayland-#{version}-mac-#{arch}.dmg"
   name "Wayland"
@@ -16,7 +16,7 @@ cask "wayland" do
   end
 
   auto_updates true
-  depends_on macos: :big_sur
+  depends_on macos: ">= :monterey"
 
   app "Wayland.app"
 
